@@ -30,21 +30,21 @@ typedef std::pair<std::string, Device::BuiltinAction> menu_action_t;
 
 static std::vector<std::string> g_main_header{};
 static std::vector<menu_action_t> g_main_actions{
-  { "Reboot system now", Device::REBOOT },
-  { "Apply update", Device::APPLY_UPDATE },
+  { "Reboot to system", Device::REBOOT },
+  { "Install", Device::APPLY_UPDATE },
   { "Factory reset", Device::MENU_WIPE },
   { "Advanced", Device::MENU_ADVANCED },
 };
 
 static std::vector<std::string> g_advanced_header{ "Advanced options" };
 static std::vector<menu_action_t> g_advanced_actions{
-  { "Enter fastboot", Device::ENTER_FASTBOOT },
+  { "Enter fastboot mode", Device::ENTER_FASTBOOT },
   { "Reboot to bootloader", Device::REBOOT_BOOTLOADER },
   { "Reboot to recovery", Device::REBOOT_RECOVERY },
   { "Mount /system", Device::MOUNT_SYSTEM },
   { "View recovery logs", Device::VIEW_RECOVERY_LOGS },
   { "Enable ADB", Device::ENABLE_ADB },
-  { "Run graphics test", Device::RUN_GRAPHICS_TEST },
+  { "Run graphical test", Device::RUN_GRAPHICS_TEST },
   { "Run locale test", Device::RUN_LOCALE_TEST },
   { "Enter rescue", Device::ENTER_RESCUE },
   { "Power off", Device::SHUTDOWN },
